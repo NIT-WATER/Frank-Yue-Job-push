@@ -17,8 +17,8 @@ class Master:
             msg = crawl_information(user, company)
             for user in self.user_info:
                 send_email(self.admin_info, user, msg)
-    
+
     def get_crawl_func(self, company):
-        file, pathname, description = imp.find_module("f'./src/{company.name}'", path=['./'])
+        file, pathname, description = imp.find_module("f'./src/{company.name}/crawl.py'", path=['./'])
         mod = imp.load_module('', file, pathname, description)
         mod.crawl_information()
