@@ -1,1 +1,1 @@
-# Frank-Yue-Job-push
+# Frank-Yue-Job-pushThis project is used to crawl the company's recruitment, regularly send the latest recruitment information to users
